@@ -1,0 +1,487 @@
+/* title fonts
+ */
+
+
+/* /* para fonts 
+ */
+
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+:root{
+    --clr-text:#3d3d3d;
+    --clr-primary:#067E0A;
+    --clr-accent:#482352;
+    
+    --ff-title: 'Twinkle Star', cursive;
+ 
+   
+
+    --ff-serif: 'Roboto', sans-serif;
+
+    --ff-logo:    'Permanent Marker', cursive;
+
+    /* font-family: 'Twinkle Star', cursive; */
+}
+
+body{
+    margin: 0;
+    text-align: center;
+}
+
+
+html{
+    color:var(--clr-text);
+    font-size: 1.1rem;
+    font-family: var(--ff-serif);
+}
+
+img{
+    display: inline;
+    width: 100%;
+}
+
+section{
+    padding: 3em 1em;
+}
+
+
+h2,h3{
+    font-family: var(--ff-title);
+    font-size: 2.75rem;
+    line-height: 1.33em;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+   
+}
+
+p{
+    margin-bottom: 0.75em;
+}
+
+.section-title-small {
+    font-size: 3rem;
+}
+
+ .section-title-small small{
+     font-size: 0.75em;
+     display: block;
+ }
+
+.logo{
+    font-family: var(--ff-logo);
+    text-align: center;
+}
+
+
+.text-primary{
+    color: var(--clr-primary);
+}
+
+.logo a{
+    text-decoration: none;
+    color: rgb(36, 36, 36);
+    font-weight: lighter;
+}
+
+
+/* Navigation style */
+
+nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+
+nav a{
+    display: inline-block;
+    padding: 0.2em;
+    text-decoration: none;
+    color: var(--clr-primary);
+    font-size: 14px;
+}
+
+
+nav a:hover,
+nav a:focus{
+    color: var(--clr-accent);
+    text-decoration: underline;
+  
+}
+
+
+/* buttons style  */
+
+
+.btn-group{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.btn{
+    /* padding: .65em 2.4rm; */
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: .75em 1.35em;
+    margin: 5px;
+    border-radius: .29em;
+
+}
+
+
+
+.btn:hover , .btn:hover{
+    opacity: .8;
+    
+
+}
+
+.btn-primary{
+    background-color: var(--clr-primary);
+    margin-bottom: 20px;
+}
+
+.btn-accent{
+    background: var(--clr-accent);
+    margin-bottom: 10px;
+}
+
+
+.hero{
+    background-color: rgba(0, 0, 0, 0.5);
+   
+    background-size: cover;
+background: center center cover;
+ background-image: url('food4.jpg');
+ background-blend-mode: multiply;
+ color: white;
+ text-align: center;
+ text-transform: capitalize;
+ padding: 10vh 0;
+ background-attachment: fixed;
+ background-position: center;
+
+
+}
+
+
+
+
+
+.about-us{
+
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 1em 1em;
+    /* height: 80vh; */
+   
+}
+
+
+.about-us__intro{
+   padding: 3em 1em 1em;
+   opacity: .77;
+
+   background-image: url('food5.jpg');
+   background-size: cover;
+   background-position: center;
+   font-weight: bolder;
+   
+
+   }
+
+
+
+
+.about-us__body{
+    padding: 1.5em 1em 3em ;
+    background-color: var(--clr-accent);
+    
+}
+
+
+.order-online{
+    background: rgba(0, 0, 0, 0.03);
+}
+
+
+.products{
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+
+.product{
+    background: rgba(240, 237, 237, 0.5);
+    padding: 1em;
+    
+     border-radius: 1em;
+
+     margin-bottom: 13px;
+   
+    box-shadow: 5px 3px 1em rgba(0, 0, 0, 0.39) ;
+
+
+}
+
+
+.product__img{
+    border-radius: 17px;
+}
+
+
+.fine-print{
+    font-size: .85rem;
+    color: rgba(15, 13, 13, 0.6);
+}
+
+
+.product:last-of-type{
+    margin-bottom: 3em;
+}
+
+
+
+
+
+
+
+
+/* Homepage Style*/
+
+
+
+/* footer sytling*/
+
+footer{
+    background: #333;
+    /* padding: 3em 1em; */
+    color: white;
+}
+
+
+footer a{
+  
+    color: inherit;
+}
+
+.footer-nav{
+    display: flex;
+    list-style: none;
+}
+
+
+
+.footer-nav a{
+  padding: 0.45em;
+  text-decoration: none;
+}
+
+
+.footer-nav a:hover ,
+.footer-nav a:hover{
+   text-decoration: underline;
+  }
+
+
+  .footer-social{
+      display: flex;
+      text-decoration: none;
+      list-style: none;
+
+
+  }
+
+  .copyright{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+
+  .copyright p{
+  
+    font-size: 13px;
+}
+
+
+  .social__img{
+      height: 50px;
+      width: 50px;
+      margin: 10px;
+      border-radius: 13px;
+     
+    
+    }
+
+
+    @media only screen and (min-width:650px){
+        nav ul{
+           
+            justify-content: space-evenly;
+
+        }
+
+        nav a{
+           
+            font-size: 25px;
+        }
+
+        .hero {
+            
+            padding: 11vh 0;
+           
+            background-position: center;
+        }
+
+        .intro {
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        .oath{
+            font-size: 3rem;
+        }
+
+
+    .about-us__body{
+            padding: 3em 1em 3em;
+            
+        }
+
+        .Email{
+            padding: .75em 2.8em;
+       
+        }
+
+        .btn-group{
+           
+            justify-content: space-evenly;
+            flex-direction: row;
+        }
+
+
+        .product{
+         
+            padding: 0em;
+            width: 80%;
+            margin: 0 auto;
+      
+        
+        
+        }
+
+        .products{
+            width: 90%;
+        }
+
+
+       
+
+
+
+
+        
+        .product:last-of-type{
+            margin-bottom: .21em;
+        }
+
+
+        .product{
+            margin: 20px;
+        } */
+
+
+        .products{
+            padding: 0em;
+        }
+
+       
+        
+    
+
+    }
+
+
+
+    @media only screen and (min-width:800px){
+
+        .order-online{
+            max-width: 1120px;
+            margin: 0 auto;
+        }
+
+
+        .products{
+            
+            flex-direction: row;
+             justify-content: space-evenly;
+           
+            
+        
+        }
+
+        .product:last-of-type{
+            margin-bottom: 0em;
+        }
+
+
+        .product{
+            margin: 20px;
+        }
+
+    }
+
+
+
+    @media only screen and (max-width:310px){
+
+        h2,h3{
+            font-family: var(--ff-title);
+            font-size: 1.25rem;
+            line-height: 1em;
+            
+           
+           
+        }
+
+    }
+
+
+
+    @media only screen and (max-width:200px){
+
+        nav a{
+            font-size: 8px;
+            padding: 0em ;
+
+        }
+
+
+
+
+
+    }
+
+
+
+    @media only screen and (max-width:600px){
+
+        .hero{
+            
+            background-attachment: scroll;
+           
+           
+           
+           }
+
+    }
